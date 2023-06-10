@@ -29,7 +29,7 @@
 .BmiCalculator .container {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  margin: 10px 20px;
+  margin: 10px 20px 20px;
   padding: 12px 12px;
 }
 
