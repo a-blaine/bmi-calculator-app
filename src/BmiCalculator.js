@@ -21,12 +21,16 @@ export default function BmiCalculator({ defaultHeight, defaultWeight }) {
 
   return (
     <div className="BmiCalculator">
-      <h1>BMI Calculator</h1>
       <div className="container">
-        <p>Weight: {weight} kg </p>
+        <h1>BMI Calculator</h1>
+        <p>
+          Weight: <span className="number">{weight}</span> kg{" "}
+        </p>
         <input type="range" min={36} max={230} onChange={updateWeight} />
-        <p>Height: {height} cm</p>
-        <input type="range" min={155} max={220} onChange={updateHeight} />
+        <p>
+          Height:<span className="number">{height}</span> cm
+        </p>
+        <input type="range" min={150} max={220} onChange={updateHeight} />
         <div>
           <p>Your BMI is: </p>
           <p className="bmi-result">{calculateResult}</p>
